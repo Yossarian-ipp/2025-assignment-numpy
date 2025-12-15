@@ -47,7 +47,7 @@ def max_index(X):
         raise ValueError("Array must contain numeric data")
     
     if np.ndim(X) != 2:
-        raise ValueError(f"Expected 2D array, got {X.ndim}D")
+        raise ValueError(f"Expected 2D array, but got {X.ndim}D")
     
     i, j = np.unravel_index(np.argmax(X), X.shape)
 
